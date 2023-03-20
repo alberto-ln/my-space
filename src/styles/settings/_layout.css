@@ -1,0 +1,115 @@
+$max-width: 1920px;
+$max-content: 960px;
+
+// Spacing
+$spacing-s: 1rem;
+$spacing: 1.6rem;
+$spacing-l: 3.25rem;
+$spacing-xl: 6rem;
+
+$margin-sections: 200px;
+$margin-sections-s: 100px;
+
+//Queries
+$device: 660px;
+$tablet: 768px;
+$pro: 1024px;
+$desktop: 1300px;
+$inch-13: 1440px;
+$full-hd: 1920px;
+
+// Mixins
+
+@mixin container {
+  max-width: $max-content;
+  margin: 0 auto;
+  width: 90vw;
+  @media (max-width: $tablet) {
+    width: 95vw;
+  }
+  @media (max-width: $device) {
+    width: 98%;
+  }
+}
+
+
+@mixin full-container {
+  margin: 0 auto;
+  width: 90vw;
+  @media (max-width: $full-hd) {
+    width: 90vw;
+  }
+  @media (max-width: $desktop) {
+    width: 90vw;
+  }
+  @media (max-width: $tablet) {
+    width: 80vw;
+  }
+  @media (max-width: $device) {
+    width: 90%;
+  }
+}
+
+@mixin boxed-container {
+  max-width: $max-content;
+  margin: 0 auto;
+  width: 90vw;
+  @media (max-width: $tablet) {
+    width: 80vw;
+  }
+  @media (max-width: $device) {
+    width: 90%;
+  }
+}
+
+@mixin boxed-container-margin-left {
+  margin-left: 5vw;
+  @media (max-width: $tablet) {
+    margin-left: 10vw;
+  }
+  @media (max-width: $device) {
+    margin-left: 5%;
+  }
+}
+
+@mixin boxed-container-margin-right {
+  margin-right: 5vw;
+  @media (max-width: $tablet) {
+    margin-right: 10vw;
+  }
+  @media (max-width: $device) {
+    margin-right: 5%;
+  }
+}
+
+@mixin boxed-container-small {
+  max-width: $max-content;
+  margin: 0 auto;
+  width: 80vw;
+  @media (max-width: $tablet) {
+    width: 70vw;
+  }
+  @media (max-width: $device) {
+    width: 90%;
+  }
+}
+
+@mixin boxed-container-small-margin-left {
+  margin-left: calc((100vw - $max-content) / 2);
+  @media (max-width: $tablet) {
+    margin-left: 15vw;
+  }
+  @media (max-width: $device) {
+    margin-left: 5%;
+  }
+}
+
+@mixin boxed-container-small-margin-right {
+  margin-right: calc((100vw - $max-content) / 2);
+  @media (max-width: $tablet) {
+    margin-right: 15vw;
+  }
+  @media (max-width: $device) {
+    margin-right: 5%;
+  }
+}
