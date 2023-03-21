@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-netlify",    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     `gatsby-transformer-json`,
+     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

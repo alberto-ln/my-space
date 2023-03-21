@@ -1,0 +1,23 @@
+.link{
+    color: var(--c-primary);
+    text-decoration: none;
+}
+.m-socials{
+    padding-top: 40px;
+}
+.socials__list{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials__item a {
+    color: var(--c-primary);
+}
+.socials__item a:hover   {
+    color: var(--c-secondary);
+}

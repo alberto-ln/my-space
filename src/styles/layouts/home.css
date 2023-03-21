@@ -1,0 +1,13 @@
+.l-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.l-home .m-socials{
+    margin-top: auto;
+    padding-bottom: 1em;
+}
